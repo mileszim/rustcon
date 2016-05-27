@@ -1,0 +1,23 @@
+{
+  "name": "rustcon",
+  "version": "0.0.0",
+  "description": "RCON service & log parser for Rust",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mileszim/rustcon.git"
+  },
+  "keywords": [
+    "rcon",
+    "rust"
+  ],
+  "author": "Miles Zimmerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mileszim/rustcon/issues"
+  },
+  "homepage": "https://github.com/mileszim/rustcon#readme"
+}
