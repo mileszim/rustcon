@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jasmine",
-    "build": "babel lib --out-file dist/rustcon.js"
+    "build": "babel lib --out-dir dist"
   },
   "repository": {
     "type": "git",
