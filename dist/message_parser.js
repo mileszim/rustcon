@@ -8,7 +8,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var OXIDE_REGEX = /^\[Oxide\]\s(\d{1,2}:\d{2})\s\[(\w+)\]\s(.*)$/;
+var OXIDE_REGEX = /^\[Oxide\]\s(\d{1,2}:\d{2})\s\[(\w+)\]\s(?:\[([\w\s\-]+)\]:?\s)?(.*)$/;
 var RCON_REGEX = /^\[RCON\]\[(.+)\]\s(.+)$/;
 var CHAT_REGEX = /^\[CHAT\]\s(.+)\[(\d+)\/(\d+)\]\s:\s(.*)$/;
 
@@ -124,7 +124,8 @@ var MessageParser = function () {
         msg: message,
         timestamp: new Date(),
         level: props[2].toLowerCase(),
-        content: props[3]
+        plugin: props[3],
+        content: props[4]
       };
     }
   }, {
