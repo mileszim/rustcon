@@ -1,6 +1,6 @@
 {
   "name": "rustcon",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "RCON service & log parser for Rust",
   "main": "index.js",
   "scripts": {
