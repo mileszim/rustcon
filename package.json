@@ -4,7 +4,8 @@
   "description": "RCON service & log parser for Rust",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "build": "babel lib --out-file dist/rustcon.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/mileszim/rustcon/issues"
   },
-  "homepage": "https://github.com/mileszim/rustcon#readme"
+  "homepage": "https://github.com/mileszim/rustcon#readme",
+  "dependencies": {
+    "sourcecon": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "jasmine": "^2.4.1"
+  }
 }

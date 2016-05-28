@@ -1,0 +1,19 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * rustcon
+ */
+
+var RustCon = function RustCon() {
+  _classCallCheck(this, RustCon);
+
+  console.log('test');
+};
+
+exports.default = RustCon;
