@@ -70,6 +70,7 @@ The message event is emitted after every rcon line on the server. It is broken d
     }
 
 **Chat:**
+
     {
       type: 'chat',
       msg: '[CHAT] playername[1234567/12345678901234566] : Hello playername.',
@@ -78,4 +79,13 @@ The message event is emitted after every rcon line on the server. It is broken d
       id: '1234567',
       steamId: '12345678901234566',
       content: 'Hello playername.'
+    }
+
+**General:**
+
+    {
+      type: 'general',
+      msg: 'playername[1234567/12345678901234566] died (Bite)',
+      timestamp: 2016-05-28T02:07:56.362Z,
+      content: 'playername[1234567/12345678901234566] died (Bite)'
     }
