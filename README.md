@@ -52,6 +52,7 @@ The player_status event response will return an array of the current players on 
 The message event is emitted after every rcon line on the server. It is broken down into objects according to the type of log line:
 
 **RCON:**
+
     {
       type: 'rcon',
       msg: '[RCON][123.123.123.123:12345] status',
@@ -61,6 +62,7 @@ The message event is emitted after every rcon line on the server. It is broken d
     }
 
 **Oxide:**
+
     {
       type: 'oxide',
       msg: '[Oxide] 02:43 [Info] [BetterLoot] BetterLoot: Refreshed 39 containers (0 destroyed)',
