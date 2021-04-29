@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "09:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: jasmine
+    versions:
+    - 3.6.4
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
